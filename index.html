@@ -10,7 +10,14 @@
       href="./images/favicon-32x32.png"
     />
     <title>Frontend Mentor</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <style>
       .attribution {
         font-size: 11px;
@@ -29,9 +36,11 @@
           <span class="navbar__logo__total">Total Followers: 23,004</span>
         </div>
         <div class="navbar__switch-box">
+          <span class="navbar__switch__color-theme">Dark Mode</span>
           <input id="switch" type="checkbox" />
-          <label for="switch" class="navbar__switch__label">Dark Mode</label>
-          <span class="navbar__switch__btn"></span>
+          <label for="switch" class="navbar__switch__label">
+            <p class="navbar__switch__btn"></p>
+          </label>
         </div>
       </header>
       <!-- followers container -->
