@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="navbar">
+        <div class="navbar__logo">
+          <span class="navbar__logo__title">Social Media Dashboard</span>
+          <span class="navbar__logo__total">Total Followers: 23,004</span>
+        </div>
+        <div class="navbar__switch-box">
+          <input id="switch" type="checkbox" />
+          <label for="switch" class="navbar__switch__label">Dark Mode</label>
+          <span class="navbar__switch__btn"></span>
+        </div>
+      </header>
+      <!-- followers container -->
+      <section class="followers">
+        <ul class="followers__card">
+          <div
+            class="followers__card__color followers__card__color-deep-blue"
+          ></div>
+          <li class="followers__card__logo">
+            <img src="images/icon-facebook.svg" alt="facebook" />
+            <span class="followrs__card__logo__text">@nathanf</span>
+          </li>
+          <li class="followers__card__num">
+            <h2 class="followers__card__num__title">1987</h2>
+            <span class="followers__card__num__text">FOLLOWERS</span>
+          </li>
+          <li class="followers__card__today up-green">
+            <img src="images/icon-up.svg" />12 Today
+          </li>
+        </ul>
+        <ul class="followers__card">
+          <div class="followers__card__color followers__card__color-blue"></div>
+          <li class="followers__card__logo">
+            <img src="images/icon-twitter.svg" alt="twitter" />
+            <span class="followrs__card__logo__text">@nathanf</span>
+          </li>
+          <li class="followers__card__num">
+            <h2 class="followers__card__num__title">1044</h2>
+            <span class="followers__card__num__text">FOLLOWERS</span>
+          </li>
+          <li class="followers__card__today up-green">
+            <img src="images/icon-up.svg" />99 Today
+          </li>
+        </ul>
+        <ul class="followers__card">
+          <div
+            class="followers__card__color followers__card__color-rainbow"
+          ></div>
+          <li class="followers__card__logo">
+            <img src="images/icon-instagram.svg" alt="instagram" />
+            <span class="followrs__card__logo__text">@realnathanf</span>
+          </li>
+          <li class="followers__card__num">
+            <h2 class="followers__card__num__title">11k</h2>
+            <span class="followers__card__num__text">FOLLOWERS</span>
+          </li>
+          <li class="followers__card__today up-green">
+            <img src="images/icon-up.svg" />1099 Today
+          </li>
+        </ul>
+        <ul class="followers__card">
+          <div class="followers__card__color followers__card__color-red"></div>
+          <li class="followers__card__logo">
+            <img src="images/icon-youtube.svg" alt="youtube" />
+            <span class="followrs__card__logo__text">@nathanf</span>
+          </li>
+          <li class="followers__card__num">
+            <h2 class="followers__card__num__title">8239</h2>
+            <span class="followers__card__num__text">SUBSCRIBERS</span>
+          </li>
+          <li class="followers__card__today down-red">
+            <img src="images/icon-up.svg" /> 144 Today
+          </li>
+        </ul>
+      </section>
+      <!-- overview -->
+      <section class="overview">
+        <ul class="overview__cards">
+          <!-- cards 1 -->
+          <li class="overview__list">
+            <div class="overview__list__box">
+              <div class="overview__list__box__title">
+                <h5 class="overview__list__box__text">Page Views</h5>
+                <span class="overview__list__box__num">87</span>
+              </div>
+              <div class="overview__list__box__logo">
+                <img
+                  src="images/icon-facebook.svg"
+                  alt="facebook"
+                  class="overview__list__logo__img"
+                />
+                <span class="overview__list__text up-green"
+                  ><img src="images/icon-up.svg" />3%</span
+                >
+              </div>
+            </div>
+            <div class="overview__list__box">
+              <div class="overview__list__box__title">
+                <h5 class="overview__list__box__text">Retweets</h5>
+                <span class="overview__list__box__num">117</span>
+              </div>
+              <div class="overview__list__box__logo">
+                <img
+                  src="images/icon-twitter.svg"
+                  alt="twitter"
+                  class="overview__list__logo__img"
+                />
+                <span class="overview__list__text up-green"
+                  ><img src="images/icon-up.svg" />30%</span
+                >
+              </div>
+            </div>
+          </li>
+          <!-- cards 2-->
+          <li class="overview__list">
+            <div class="overview__list__box">
+              <div class="overview__list__box__title">
+                <h5 class="overview__list__box__text">Likes</h5>
+                <span class="overview__list__box__num">52</span>
+              </div>
+              <div class="overview__list__box__logo">
+                <img
+                  src="images/icon-facebook.svg"
+                  alt="facebook"
+                  class="overview__list__logo__img"
+                />
+                <span class="overview__list__text down-red"
+                  ><img src="images/icon-down.svg" />2%</span
+                >
+              </div>
+            </div>
+            <div class="overview__list__box">
+              <div class="overview__list__box__title">
+                <h5 class="overview__list__box__text">Likes</h5>
+                <span class="overview__list__box__num">507</span>
+              </div>
+              <div class="overview__list__box__logo">
+                <img
+                  src="images/icon-twitter.svg"
+                  alt="twitter"
+                  class="overview__list__logo__img"
+                />
+                <span class="overview__list__text up-green"
+                  ><img src="images/icon-up.svg" />553%</span
+                >
+              </div>
+            </div>
+          </li>
+          <!-- cards 3-->
+          <li class="overview__list">
+            <div class="overview__list__box">
+              <div class="overview__list__box__title">
+                <h5 class="overview__list__box__text">Likes</h5>
+                <span class="overview__list__box__num">5462</span>
+              </div>
+              <div class="overview__list__box__logo">
+                <img
+                  src="images/icon-instagram.svg"
+                  alt="instagram"
+                  class="overview__list__logo__img"
+                />
+                <span class="overview__list__text up-green"
+                  ><img src="images/icon-up.svg" />2257%</span
+                >
+              </div>
+            </div>
+            <div class="overview__list__box">
+              <div class="overview__list__box__title">
+                <h5 class="overview__list__box__text">Likes</h5>
+                <span class="overview__list__box__num">107</span>
+              </div>
+              <div class="overview__list__box__logo">
+                <img
+                  src="images/icon-youtube.svg"
+                  alt="youtube"
+                  class="overview__list__logo__img"
+                />
+                <span class="overview__list__text up-green"
+                  ><img src="images/icon-down.svg" />19%</span
+                >
+              </div>
+            </div>
+          </li>
+          <!-- cards 4-->
+          <li class="overview__list">
+            <div class="overview__list__box">
+              <div class="overview__list__box__title">
+                <h5 class="overview__list__box__text">Profile Views</h5>
+                <span class="overview__list__box__num">52K</span>
+              </div>
+              <div class="overview__list__box__logo">
+                <img
+                  src="images/icon-instagram.svg"
+                  alt="instagram"
+                  class="overview__list__logo__img"
+                />
+                <span class="overview__list__text up-green"
+                  ><img src="images/icon-up.svg" />1375%</span
+                >
+              </div>
+            </div>
+            <div class="overview__list__box">
+              <div class="overview__list__box__title">
+                <h5 class="overview__list__box__text">Total Views</h5>
+                <span class="overview__list__box__num">1407</span>
+              </div>
+              <div class="overview__list__box__logo">
+                <img
+                  src="images/icon-youtube.svg"
+                  alt="youtube"
+                  class="overview__list__logo__img"
+                />
+                <span class="overview__list__text up-green"
+                  ><img src="images/icon-down.svg" />12%</span
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
