@@ -1,8 +1,5 @@
-:root {
-  /* mobile 375px
-  desktop 1440px */
+:root .dark-mode {
   /* color */
-  font-size: 14px;
   --lime-green-color: hsl(163, 72%, 41%);
   --Bright-red-color: hsl(356, 69%, 56%);
   --main-white-color: hsl(0, 0%, 100%);
@@ -44,9 +41,52 @@
   --font-size-num: 3vw;
 }
 
+:root,
+:root .light-mode {
+  /* #### Light Theme */
+  --main-text-color: #121212;
+  --body-color: hsl(225, 100%, 98%);
+  --main-background-color: hsl(225, 100%, 99%);
+  --main-card-color: hsl(227, 47%, 96%);
+  --sub-gray-color: hsl(228, 12%, 44%);
+  --Very-Dark-Blue: hsl(230, 17%, 14%);
+
+  /* color */
+  --lime-green-color: hsl(163, 72%, 41%);
+  --Bright-red-color: hsl(356, 69%, 56%);
+  --main-white-color: hsl(0, 0%, 100%);
+  --facebook-color: hsl(208, 92%, 53%);
+  --twitter-color: hsl(203, 89%, 53%);
+  --instagram1-color: hsl(37, 97%, 70%);
+  --instagram2-color: hsl(329, 70%, 58%);
+  --youTube-color: hsl(348, 97%, 39%);
+
+  /* Switch */
+  --Toggle1: hsl(230, 22%, 74%);
+  --Toggle2: hsl(230, 22%, 74%);
+
+  /* padding, margin */
+  --basic-xs-space: 0.4vw;
+  --basic-s-space: 0.8vw;
+  --basic-m-space: 1.4vw;
+  --basic-l-space: 1.8vw;
+
+  /* font */
+  --basic-font: "Inter", sans-serif;
+  --bold-font: 700;
+  --regular-font: 400;
+
+  --font-size-today: 0.7vw;
+  --font-size-xs: 0.9vw;
+  --font-size-s: 1vw;
+  --font-size-m: 1.2vw;
+  --font-size-l: 1.5vw;
+  --font-size-xl: 2.1vw;
+  --font-size-num: 3vw;
+}
+
 body {
   background-color: var(--body-color);
-  color: var(--main-white-color);
 }
 .wrapper {
   margin: auto;
@@ -71,6 +111,7 @@ body {
 }
 
 .navbar__logo__title {
+  color: var(--main-text-color);
   font-weight: var(--bold-font);
   font-size: var(--font-size-l);
 }
@@ -161,6 +202,7 @@ body {
   text-align: center;
   align-items: center;
   display: flex;
+  flex-shrink: 3;
 }
 .followers__card__logo__text {
   margin-left: var(--basic-s-space);
@@ -171,10 +213,13 @@ body {
 .followers__card__num {
   text-align: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .followers__card__num__title {
   font-size: var(--font-size-num);
   font-weight: var(--bold-font);
+  color: var(--main-text-color);
   margin-bottom: var(--basic-s-space);
 }
 
@@ -182,6 +227,7 @@ body {
   color: var(--sub-gray-color);
   letter-spacing: 0.2rem;
   font-size: var(--font-size-xs);
+  flex-wrap: wrap;
 }
 
 .followers__card__today {
@@ -208,6 +254,7 @@ body {
   font-size: var(--font-size-l);
   font-weight: var(--bold-font);
   margin-top: var(--basic-l-space);
+  color: var(--main-text-color);
 }
 
 .overview__cards {
@@ -243,6 +290,7 @@ body {
 .overview__list__box__text {
   color: var(--sub-gray-color);
   margin-bottom: var(--basic-m-space);
+  font-size: var(--font-size-m);
 }
 .overview__list__box__num {
   color: var(--main-text-color);
@@ -259,6 +307,7 @@ body {
 .overview__list__logo__img {
   max-width: 20px;
   margin-bottom: var(--basic-l-space);
+  flex-shrink: 3;
 }
 .overview__list__text {
   font-size: var(--font-size-xs);
@@ -269,17 +318,17 @@ body {
 
 .attribution {
   font-size: 11px;
-
+  color: var(--main-text-color);
   margin: auto;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--sub-gray-color);
 }
 
 @media (max-width: 375px) {
   .wrapper {
     width: 90%;
-    padding: 5%;
+    padding: 7% 5%;
   }
   .navbar {
     flex-direction: column;
@@ -308,7 +357,7 @@ body {
   /* followers */
   .followers {
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     margin-bottom: 3rem;
     flex-direction: column;
     height: 130vh;

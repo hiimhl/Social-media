@@ -4,9 +4,8 @@
 .DS_Store
 
 README-template.md
-README.md
 style-guide.md
 text
 
 /design
-
+/dummy
