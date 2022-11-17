@@ -84,17 +84,30 @@
   --font-size-xl: 2.1vw;
   --font-size-num: 3vw;
 }
-
-body {
-  background-color: var(--body-color);
+* {
+  box-sizing: border-box;
 }
+body {
+  background-color: var(--main-background-color);
+}
+
+/* background */
 .wrapper {
   margin: auto;
   width: 80%;
   max-width: 1440px;
-  padding: 0 10%;
-  background-color: var(--main-background-color);
+  /* background-color: var(--main-background-color); */
   font-family: "Inter", sans-serif;
+}
+
+.bg {
+  background-color: var(--body-color);
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /* navbar */
@@ -185,7 +198,6 @@ body {
 .followers__color-rainbow {
   border-radius: 5px;
   border-top: transparent 5px solid;
-  background-origin: border-box;
   background-clip: content-box, border-box;
   background-image: linear-gradient(
       var(--main-card-color),
@@ -325,7 +337,8 @@ body {
   color: var(--sub-gray-color);
 }
 
-@media (max-width: 375px) {
+/* Tablet & Mobile */
+@media (max-width: 768px) {
   .wrapper {
     width: 90%;
     padding: 7% 5%;
@@ -339,7 +352,7 @@ body {
   .navbar__logo {
     width: 100%;
     border-bottom: var(--sub-gray-color) 1px solid;
-     margin-bottom: 0.3rem;
+    margin-bottom: 0.3rem;
   }
   .navbar__logo__title {
     font-size: 1.6rem;
@@ -358,12 +371,12 @@ body {
 
   /* followers */
   .followers {
-    flex-wrap: wrap;
     margin-top: 2.5rem;
     margin-bottom: 3rem;
     flex-direction: column;
     height: 130vh;
     max-height: 900px;
+    gap: calc(var(--basic-l-space) * 3);
   }
   .followers__card {
     width: 100%;
@@ -396,7 +409,7 @@ body {
     height: 25rem;
   }
   .overview__list__box {
-    width: 90%;
+    width: 100%;
     height: 8rem;
     padding: 0 5%;
     margin-bottom: 1.5rem;
